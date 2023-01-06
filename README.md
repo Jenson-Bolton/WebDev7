@@ -3,7 +3,8 @@ WebDev coursework
 
 ## Working on the project
 
-Use VS Code
+ - Use VS Code
+ - Use Git
 
 ### Extentions
 
