@@ -13,20 +13,93 @@ h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+a {
+    color: var(--black);
+    font-family: var(--body-font);
+    text-decoration: none;
+    position: relative;
+}
 
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
 
-.jenson {
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-gap-small {
+    grid-gap: 10px;
+}
+
+.grid-gap-medium {
+    grid-gap: 25px;
+}
+
+.grid-gap-large {
+    grid-gap: 50px;
+}
+
+.span-col-2{grid-column: span 2 / auto;}
+.span-col-3{grid-column: span 3 / auto;}
+.span-col-4{grid-column: span 4 / auto;}
+
+.span-row-2{grid-row: span 2 / auto;}
+.span-row-3{grid-row: span 3 / auto;}
+.span-row-4{grid-row: span 4 / auto;}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Area for jenson's about page */
+
+footer.jenson {
+    background-color: var(--white);
+    padding: 4rem;
+}
+
+.jenson h1 {
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: 0.1em;
+}
+
+.jenson h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.jenson nav {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .jenson .bg-img-container {
     background-image: url(../img/jenson/header-3.jpg);
     background-position: center;
     background-size: cover;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 30rem;
+}
+
+.jenson .wide-sub-heading {
+    background-color: var(--white);
+    height: 10rem;
 }
