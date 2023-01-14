@@ -1,0 +1,36 @@
+body {
+    background-color: lightgrey;
+  }
+  header {
+    background: rgb(186, 171, 171);
+    
+    padding: 15px 20px;
+  }
+  section {
+    background: grey;
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    background: black;
+    color: white;
+    padding: 15px 20px;
+  }
+  section div {
+    background: lightgrey;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  li{
+
+  display: inline;
+  margin: 20px;
+  }
