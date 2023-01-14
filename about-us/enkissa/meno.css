@@ -1,4 +1,144 @@
-p
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+
+
+body
 {
-    color: blue;
+    background-color: #a8b0F8;
+    opacity: 74%;
+    
+    
 }
+
+.navbar
+
+{
+    margin: auto;
+    display: inline-flex;
+    background-color: aqua;
+    opacity: 50%;
+    border: 3px solid black;
+    width: 100%;
+
+    
+    
+    
+}
+.navbar_right
+{
+    text-align: right;
+    float: right;
+    padding-right: 25px;
+    position:relative;
+    margin-top: 42.88px;
+    margin-bottom: 42.88px;
+    padding-top: 15px;
+    padding-left: 550px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar_left
+{
+    margin-left: 30px;
+    font-family: 'Island Moments', cursive;
+    font-size: 64px;
+    color: black;
+}
+.midsection
+{
+    height: 500px;
+}
+.left_midsection
+{
+    font-size: 64px;
+    width: 50%;
+    float: left;
+   text-align: center;
+}
+
+.right_midsection
+{
+    margin-top: 50px;
+    width: 50%;
+    float: right;
+   
+}
+.button
+{
+    border: 1px solid #9b59b6;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    background-color: aqua;
+    opacity: 50%;
+    
+}
+
+.cw1, .cw2
+{
+    color: #9b59b6;
+}
+.cw1:hover, .cw2:hover
+{
+    color: #a8b0f8;
+}
+
+.left_side
+{
+    float: left;
+    width: 70%;
+}
+
+.coursework
+{
+    float: left;
+    width: 70%;
+    padding-left: 50px;
+    
+}
+.about_me
+{
+    float: left;
+    width: 70%;
+    font-size: 24px;
+    padding-left: 50px;
+}
+.contact_details
+{
+   
+    height: 338px;
+    border: 1px solid black;
+    margin-left: 70%;
+    text-align: center;
+    font-family: 'Poppins';
+    text-align: left;
+    padding-left: 30px;
+    list-style: none;
+    position: relative;
+
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+.contact_details .icon
+{
+    display: inline-block;
+    width: 50px;
+    font-size: 30px;
+    
+}
+.contact_details li
+{
+    margin-top: 20px;
+}
+
