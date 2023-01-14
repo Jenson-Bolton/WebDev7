@@ -8,11 +8,6 @@ body, html {
     padding: 0;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: var(--heading-font);
-}
-
 a {
     color: var(--black);
     font-family: var(--body-font);
@@ -38,7 +33,7 @@ a:hover::after {
     transform-origin: bottom left;
 }
 
-footer {
+footer, header {
     background-color: var(--white);
     padding: 4rem;
 }
@@ -46,6 +41,39 @@ footer {
 footer nav {
     font-size: 1.2rem;
     text-align: center;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding: 4rem;
+    text-align: center;
+}
+
+main div {
+    background-color: var(--white);
+}
+
+main div.grid-2,
+main div.grid-3,
+main div.grid-4 {
+    background-color: unset;
+}
+
+.aspect-ratio-1-1::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / 1/1);
 }
 
 .grid-2 {
@@ -59,15 +87,15 @@ footer nav {
 }
 
 .grid-gap-small {
-    grid-gap: 10px;
+    grid-gap: 0.5rem;
 }
 
 .grid-gap-medium {
-    grid-gap: 25px;
+    grid-gap: 1rem;
 }
 
 .grid-gap-large {
-    grid-gap: 50px;
+    grid-gap: 2rem;
 }
 
 .span-col-2{grid-column: span 2 / auto;}
