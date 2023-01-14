@@ -1,0 +1,24 @@
+/* Area for jenson's about page */
+
+.jenson h1 {
+    color: var(--white);
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.jenson h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.jenson .bg-img-container {
+    background-image: url(../img/jenson/header-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+}
+
+.jenson .wide-sub-heading {
+    background-color: var(--white);
+    height: 10rem;
+}
