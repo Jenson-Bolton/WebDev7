@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+
+#container{
+    min-height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    background-image: url(orange_restaraunt_background.jpeg);
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+    line-height: 50px; 
+}
+
+.right{
+    width: 50vw;
+    background-image: url(https://luca.restaurant/wp-content/uploads/RESTAURANT_6_048-1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.home_nav_list{
+  display: flex;
+}
+
+
+
+
+   
+  
+   
