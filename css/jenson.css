@@ -1,5 +1,18 @@
 /* Area for jenson's about page */
 
+header.jenson {
+    display: block;
+    padding: 0;
+}
+
+main>div {
+    background: none;
+}
+
+main>div>div, main>div>a {
+    background-color: var(--white);
+}
+
 .jenson h1 {
     color: var(--white);
     font-size: 4rem;
@@ -18,7 +31,8 @@
     height: 30rem;
 }
 
-.jenson .wide-sub-heading {
+.wide-sub-heading {
     background-color: var(--white);
+    width: 100%;
     height: 10rem;
 }
