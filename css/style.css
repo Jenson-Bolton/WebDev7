@@ -35,7 +35,7 @@ a:hover::after {
 
 footer, header {
     background-color: var(--white);
-    padding: 4rem;
+    padding: 3rem;
 }
 
 footer nav {
@@ -104,7 +104,7 @@ main {
 
 main > * {
     background-color: var(--white);
-    padding: 2rem;
+    padding: 4rem;
 }
 
 main div.grid-2,
@@ -166,7 +166,16 @@ main div.grid-4 {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .grid-2 .grid-3 {
+    padding: 0;
+}
+
+.grid-2 .grid-4 {
     padding: 0;
 }
 
