@@ -333,10 +333,32 @@ main div.grid-4 {
 }
 
 .task-list li {
+    position: relative;
     margin-top: 1rem;
+}
+
+.task-list li::before {
+    content: '';
+    background-color: var(--blue);
+    position: absolute;
+    top: calc(50% - (0.75rem/2));
+    left: -1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.task-list li.orange::before {
+    background-color: var(--orange);
+}
+
+.task-list li.pink::before {
+    background-color: var(--pink);
+}
+
+.task-list li.red::before {
+    background-color: var(--red);
 }
 
 .task-list li::marker {
     content: '';
-    color: blue;
 }
