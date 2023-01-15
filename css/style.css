@@ -38,9 +38,24 @@ a:hover::after {
     transform-origin: bottom left;
 }
 
+footer {
+    background-color: var(--white);
+    padding: 4rem;
+}
+
+footer nav {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-gap-small {
@@ -67,39 +82,4 @@ a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Area for jenson's about page */
-
-footer.jenson {
-    background-color: var(--white);
-    padding: 4rem;
-}
-
-.jenson h1 {
-    color: var(--white);
-    font-size: 4rem;
-    letter-spacing: 0.1em;
-}
-
-.jenson h2 {
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-}
-
-.jenson nav {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.jenson .bg-img-container {
-    background-image: url(../img/jenson/header-3.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 30rem;
-}
-
-.jenson .wide-sub-heading {
-    background-color: var(--white);
-    height: 10rem;
 }
