@@ -107,10 +107,35 @@ main > * {
     padding: 4rem;
 }
 
-main div.grid-2,
 main div.grid-3,
 main div.grid-4 {
     background-color: unset;
+}
+
+.add-task {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.add-task button {
+    background-color: var(--blue);
+    position: absolute;
+    top: -5rem;
+    left: calc(50% - 2rem);
+    width: 4rem;
+    height: 4rem;
+    border: 0.5rem solid var(--white);
+    border-radius: 50%;
+}
+
+.add-task button:hover {
+    cursor: pointer;
+}
+
+.add-task img {
+    width: 100%;
+    height: 100%;
 }
 
 .aspect-ratio-1-1, .aspect-ratio-2-1 {
@@ -165,18 +190,40 @@ main div.grid-4 {
     height: 100%;
 }
 
-.form-container div {
+.form-container>div {
     background-color: var(--background);
     border: 1rem solid var(--white);
     border-radius: 2rem;
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.form-container input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.form-container input:focus {
+    outline: none;
 }
 
 .form-container input[type=submit] {
     background-color: var(--blue);
+    border: 0.2rem solid var(--white);
+    border-radius: 0.4rem;
     color: var(--white);
+    font-weight: 500;
     padding: 0.5rem 1rem;
+}
+
+.form-container input[type=submit]:hover {
+    border-color: var(--blue);
+}
+
+.form-submit {
+    text-align: center;
 }
 
 .grid-2 {
