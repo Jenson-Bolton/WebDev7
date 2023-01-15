@@ -377,6 +377,20 @@ main div.grid-4 {
     height: 30px;
 }
 
+.timer {
+    background-color: var(--background) !important;
+    padding: 1rem !important;
+}
+
+.timer > div {
+    background-color: var(--white);
+}
+
+.timer-container h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .user-card {
     background-color: var(--background);
 }
