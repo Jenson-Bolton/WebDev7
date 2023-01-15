@@ -48,24 +48,73 @@ h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header div {
+    display: flex;
+    justify-items: center;
+    justify-content: left;
+}
+
+header div > * {
+    margin: auto 0 auto 0;
+}
+
+header h1 {
+    cursor: default;
+    margin-left: 1rem;
+}
+
+header img {
+    width: 2rem;
+    height: 2rem;
+}
+
+header li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1.2rem;
+}
+
+header ul {
+    margin: 0;
+}
+
 iframe {
     width: 100%;
     height: 100%;
 }
 
 main {
-    padding: 4rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+    max-width: 75rem;
+    width: calc(100% - 8rem);
     text-align: center;
 }
 
-main div {
+main > * {
     background-color: var(--white);
+    padding: 2rem;
 }
 
 main div.grid-2,
 main div.grid-3,
 main div.grid-4 {
     background-color: unset;
+}
+
+.aspect-ratio-1-1, .aspect-ratio-2-1 {
+    position: relative;
 }
 
 .aspect-ratio-1-1::before {
@@ -76,6 +125,37 @@ main div.grid-4 {
     padding-bottom: calc(100% / 1/1);
 }
 
+.aspect-ratio-2-1::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / 2/1);
+}
+
+.aspect-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-person {
+    background-color: var(--white);
+}
+
+.card-person p {
+    font-size: 1.25rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +164,10 @@ main div.grid-4 {
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 .grid-3 {
+    padding: 0;
 }
 
 .grid-gap-small {
@@ -98,6 +182,28 @@ main div.grid-4 {
     grid-gap: 2rem;
 }
 
+.large-logo {
+    width: 20rem;
+}
+
+.inline-link {
+    font-weight: bold;
+}
+
+.inline-link::after {
+    content: '🔗';
+}
+
+.link-button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.link-button::after {
+    background-color: var(--white);
+}
+
 .span-col-2{grid-column: span 2 / auto;}
 .span-col-3{grid-column: span 3 / auto;}
 .span-col-4{grid-column: span 4 / auto;}
@@ -106,8 +212,10 @@ main div.grid-4 {
 .span-row-3{grid-row: span 3 / auto;}
 .span-row-4{grid-row: span 4 / auto;}
 
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.square-img {
+    overflow: hidden;
+}
+
+.square-img img {
+    width: 100%;
 }
