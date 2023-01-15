@@ -8,11 +8,6 @@ body, html {
     padding: 0;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: var(--heading-font);
-}
-
 a {
     color: var(--black);
     font-family: var(--body-font);
@@ -38,13 +33,196 @@ a:hover::after {
     transform-origin: bottom left;
 }
 
-footer {
+footer, header {
     background-color: var(--white);
-    padding: 4rem;
+    padding: 3rem;
 }
 
 footer nav {
     font-size: 1.2rem;
+    text-align: center;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header div {
+    display: flex;
+    justify-items: center;
+    justify-content: left;
+}
+
+header div > * {
+    margin: auto 0 auto 0;
+}
+
+header h1 {
+    cursor: default;
+    margin-left: 1rem;
+}
+
+header img {
+    width: 2rem;
+    height: 2rem;
+}
+
+header li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1.2rem;
+}
+
+header ul {
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding: 4rem 0;
+    margin: 0 auto;
+    max-width: 75rem;
+    width: calc(100% - 8rem);
+    text-align: center;
+}
+
+main > * {
+    background-color: var(--white);
+    padding: 4rem;
+}
+
+main div.grid-3,
+main div.grid-4 {
+    background-color: unset;
+}
+
+.add-task {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.add-task button {
+    background-color: var(--blue);
+    position: absolute;
+    top: -5rem;
+    left: calc(50% - 2rem);
+    width: 4rem;
+    height: 4rem;
+    border: 0.5rem solid var(--white);
+    border-radius: 50%;
+}
+
+.add-task button:hover {
+    cursor: pointer;
+}
+
+.add-task img {
+    width: 100%;
+    height: 100%;
+}
+
+.aspect-ratio-1-1, .aspect-ratio-2-1 {
+    position: relative;
+}
+
+.aspect-ratio-1-1::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / 1/1);
+}
+
+.aspect-ratio-2-1::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / 2/1);
+}
+
+.aspect-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-person {
+    background-color: var(--white);
+}
+
+.card-person p {
+    font-size: 1.25rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container>div {
+    background-color: var(--background);
+    border: 1rem solid var(--white);
+    border-radius: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.form-container input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.form-container input:focus {
+    outline: none;
+}
+
+.form-container input[type=submit] {
+    background-color: var(--blue);
+    border: 0.2rem solid var(--white);
+    border-radius: 0.4rem;
+    color: var(--white);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.form-container input[type=submit]:hover {
+    border-color: var(--blue);
+}
+
+.form-submit {
     text-align: center;
 }
 
@@ -58,16 +236,55 @@ footer nav {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2 .grid-3 {
+    padding: 0;
+}
+
+.grid-2 .grid-4 {
+    padding: 0;
+}
+
 .grid-gap-small {
-    grid-gap: 10px;
+    grid-gap: 0.5rem;
 }
 
 .grid-gap-medium {
-    grid-gap: 25px;
+    grid-gap: 1rem;
 }
 
 .grid-gap-large {
-    grid-gap: 50px;
+    grid-gap: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.large-logo {
+    width: 20rem;
+}
+
+.inline-link {
+    font-weight: bold;
+}
+
+.inline-link::after {
+    content: '🔗';
+}
+
+.link-button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.link-button::after {
+    background-color: var(--white);
 }
 
 .span-col-2{grid-column: span 2 / auto;}
@@ -78,8 +295,10 @@ footer nav {
 .span-row-3{grid-row: span 3 / auto;}
 .span-row-4{grid-row: span 4 / auto;}
 
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.square-img {
+    overflow: hidden;
+}
+
+.square-img img {
+    width: 100%;
 }

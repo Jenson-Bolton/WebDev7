@@ -1,0 +1,56 @@
+.banner{
+/*background-image: url("https://luca.restaurant/wp-content/uploads/RESTAURANT_6_048-1.jpg");*/
+height: 1000px;
+background-color: #cccccc;
+background-image: url("https://luca.restaurant/wp-content/uploads/RESTAURANT_6_048-1.jpg");
+display: flex;
+flex-direction: column;
+}
+
+.heading{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+.site_header{
+/*  width : 100%;
+  height : 50%;*/
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+
+}
+
+.navigation{
+ display: flex;
+ font-size: 1.375em;
+
+}
+
+.reservation{
+ background-color: #fff;
+ color: #000;
+
+}
+
+.home_list_item{
+  margin-left: 1em;
+
+}
+
+.home_nav_list{
+  display: flex;
+}
+
+img{
+margin-top: 150px;
+margin-left: 20px;
+
+}

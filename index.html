@@ -5,28 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
     <title>TimePiece - Home</title>
   </head>
   <body>
     <header>
       <div>
-        <img src="" alt="logo" />
+        <img src="./img/logo.svg" alt="logo" />
         <h1>TimePiece</h1>
       </div>
       <nav>
         <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Demo</a></li>
-          <li><a href="" class="link-button">Use Now</a></li>
+          <li><a href="./about-us/index.html">About Us</a></li>
+          <li><a href="./timepiece-demo/index.html">View Demo</a></li>
+          <li>
+            <a href="./timepiece/index.html" class="link-button">Use Now</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="grid-2">
-      <div class="flex-center"></div>
-      <div class="flex-center"></div>
-      <div class="span-col-2"></div>
-      <div class="grid-3">
-        <div></div>
+    <main class="grid-2 grid-gap-large">
+      <div class="flex-center">
+        <h2>About Us</h2>
+        <p>
+          A highly enthusiastic, determined and capable development
+          team driven by the instinct to always deliver the best of our work.
+          With a team compromising of 5 people from various backgrounds, we put
+          our minds together to develop an ideal time management app for
+          students and anyone interested to get their schedule sorted.<br />
+          <a href="./about-us/index.html">
+            <span class="inline-link">See More </span>
+          </a>
+        </p>
+      </div>
+      <a class="aspect-ratio-1-1" href="./about-us/index.html">
+        <div class="aspect-container flex-center">
+          <img class="large-logo" src="./img/logo.svg" alt="logo" />
+          <h2>TimePiece</h2>
+        </div>
+      </a>
+      <div class="span-col-2 aspect-ratio-2-1 no-margin">
+        <div class="aspect-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1954330253047!2d-0.1050373229964074!3d51.52797520919946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca7b1d83351%3A0x570d19c20ab22a83!2sCity%2C%20University%20of%20London!5e0!3m2!1sen!2suk!4v1673666119839!5m2!1sen!2suk"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="span-col-2 grid-3 grid-gap-large">
+        <a class="card-person" href="./about-us/jenson/index.html">
+          <div class="square-img aspect-ratio-1-1">
+            <div class="aspect-container flex-center">
+              <img src="./img/jenson/me.jpg" alt="Jenson" />
+            </div>
+          </div>
+          <p>Jenson</p>
+        </a>
+        <a class="card-person" href="./about-us/enkissa/index.html">
+          <div class="square-img aspect-ratio-1-1">
+            <div class="aspect-container flex-center">
+              <img src="./img/enkissa/me.png" alt="Enkissa" />
+            </div>
+          </div>
+          <p>Enkissa</p>
+        </a>
       </div>
     </main>
     <footer>
