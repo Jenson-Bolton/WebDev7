@@ -37,6 +37,13 @@ body
     padding-left: 550px;
     font-family: 'Montserrat', sans-serif; 
 }
+.navbar_right button
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    
+}
 
 .navbar_left
 {
@@ -57,15 +64,21 @@ body
 }
 .midsection
 {
-    height: 500px;
+    height: 600px;
+    margin-bottom: 15px;
 }
 .left_midsection
 {
-    font-size: 64px;
+    font-size: 94px;
     width: 50%;
     float: left;
    text-align: center;
    font-family: 'Sofia Sans', sans-serif;
+   margin-bottom: 15px;
+}
+.left_midsection p
+{
+    margin-bottom: 10px;
 }
 
 .right_midsection
@@ -73,7 +86,8 @@ body
     margin-top: 50px;
     width: 50%;
     float: right;
-   
+
+
 }
 .button
 {
@@ -95,7 +109,7 @@ body
 }
 .cw1:hover, .cw2:hover
 {
-    color: #a8b0f8;
+    color: #fff;
 }
 
 .left_side
@@ -115,9 +129,13 @@ body
 {
     float: left;
     width: 70%;
-    font-size: 24px;
+    font-size: 32px;
     padding-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 60px;
+    
 }
+
 .contact_details
 {
    
