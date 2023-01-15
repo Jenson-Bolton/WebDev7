@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon" />
     <title>TimePiece</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="grid-2 grid-gap-large">
+      <div class="grid-2 grid-gap-medium">
+        <div class="aspect-ratio-1-1">
+          <div class="aspect-container flex-center">
+            <div class="hollow-chart flex-center">
+              <div class="hollow-inner flex-center">
+                <h3>TimeUsage</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="task-list flex-center">
+          <ul>
+            <li class="blue">Programming</li>
+            <li class="pink">Time with family</li>
+            <li class="orange">Gym</li>
+            <li class="red">Eating</li>
+          </ul>
+        </div>
+      </div>
+      <div class="aspect-ratio-2-1">
+        <div class="aspect-container grid-2 grid-gap-medium pad-aspect">
+          <div class="task-list">
+            <h2>To Do</h2>
+            <ul>
+              <li>Clean dishes</li>
+              <li>Play with cat</li>
+              <li>Throw the garbage</li>
+              <li>Have dinner</li>
+              <li>Brush Teeth</li>
+            </ul>
+          </div>
+          <div class="task-list">
+            <div class="task-pad"></div>
+            <ul>
+              <li>Take a shower</li>
+              <li>babysit brother</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="aspect-ratio-2-1">
+        <div class="aspect-container grid-2 grid-gap-medium pad-aspect">
+          <div class="task-list">
+            <h2>Completed</h2>
+            <ul>
+              <li>Have Breakfast</li>
+              <li>Go for a jog</li>
+              <li>Leg day in gym</li>
+              <li>Have Lunch</li>
+              <li>Work on web dev </li>
+            </ul>
+          </div>
+          <div class="task-list">
+            <div class="task-pad"></div>
+            <ul>
+              <li>tidy room</li>
+              <li>clean the toilet</li>
+              <li>spend time with family</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="aspect-ratio-2-1 timer-container">
+        <div class="aspect-container pad-aspect">
+          <h2>Timer</h2>
+          <div class="timer grid-3 grid-gap-small">
+            <p class="span-col-3">Task Name</p>
+            <div>
+                <p>25:00</p>
+            </div>
+            <div>
+                <p>05:00</p>
+            </div>
+            <div>
+                <p>15:00</p>
+            </div>
+            <a href="#" class="link-button span-col-3">Start</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="add-task">
+        <button onclick="showForm()">
+          <img src="../img/plus.svg" alt="add" />
+        </button>
+      </div>
+      <nav>
+        <a href="../index.html">Home</a> |
+        <a href="../about-us/index.html">About Us</a> |
+        <a href="../timepiece/index.html">TimePiece</a>
+      </nav>
+    </footer>
+    <div class="form-container flex-center hide" id="form">
+      <div class="flex-center">
+        <h2>Add task</h2>
+        <form action="javascript:void(0);">
+          <label for="taskName">Task Name</label><br />
+          <input type="text" id="taskName" name="taskName" /><br /><br />
+          <div class="form-submit">
+            <input type="submit" value="Submit" onclick="hide('form')" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

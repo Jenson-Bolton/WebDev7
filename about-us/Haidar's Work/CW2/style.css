@@ -1,0 +1,42 @@
+
+#lHalf {
+  background: url(images/Resturant2.jpg);
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+}
+
+#rHalf {
+  background: url(images/Resturant3.jpg);
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: georgia;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  color: #333;
+  margin-bottom: 60px;
+}
+
+iframe{
+  width: 80%;
+  height: 500px;
+}

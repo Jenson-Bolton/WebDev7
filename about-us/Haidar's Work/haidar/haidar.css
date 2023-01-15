@@ -1,0 +1,155 @@
+*{
+    margin: 10;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background: rgb(148, 133, 133);
+    color: rgb(7, 3, 3);
+    position: relative;
+}
+
+.main-body-left{
+    width: 50%;
+    background: grey;
+    min-height: 40vh;
+    text-align: center;
+    position: relative;
+    flex-basis: 50%;
+}
+
+.main-body-right{
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    left: 1000px;
+    top: 585px;
+
+}
+.Second-body{
+    background:rgb(148, 133, 133) ;
+    text-align: center;
+    flex-basis: 50%;
+    width: 60%;
+    position: absolute;
+    left: 400px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15%;
+}
+.nav-links{
+    text-align: right;
+    background: red;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li a:hover{
+    color: black;
+}
+.left-sidebar{
+    width: 90%;
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(148, 133, 133);
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -1%;
+}
+.left-col{
+    flex-basis: 45%;
+}
+.right-col{
+    flex-basis: 65%;
+}
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover{
+    filter: grayscale(1);
+}
+.right-col h1{
+    font-style: 55px;
+    font-weight: 600;
+}
+.right-col p{
+    color: rgb(0, 0, 0);
+    margin: 20px 9px 10px;
+}
+.social-media{
+    display: flex;
+    margin-top: 30px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+
+}
+.icon i{
+    width: 28px;
+}
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover{
+    opacity: 1;
+}
+.icon:hover{
+    transform: translateY(-5px);
+}
