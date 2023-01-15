@@ -387,6 +387,6 @@ main div.grid-4 {
 }
 
 .users-scroll {
-    height: 100%;
+    height: calc(100% - 30px - 1rem);
     overflow-y: scroll;
 }
