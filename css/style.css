@@ -172,6 +172,11 @@ main div.grid-4 {
 
 .card-person p {
     font-size: 1.25rem;
+    margin: 0;
+}
+
+.card-text {
+    margin: 1rem 0;
 }
 
 .flex-center {
@@ -301,6 +306,10 @@ main div.grid-4 {
     background-color: var(--white);
 }
 
+.smaller {
+    font-size: 0.75rem !important;
+}
+
 .span-col-2{grid-column: span 2 / auto;}
 .span-col-3{grid-column: span 3 / auto;}
 .span-col-4{grid-column: span 4 / auto;}
@@ -318,5 +327,16 @@ main div.grid-4 {
 }
 
 .task-list {
+    align-items: baseline;
     text-align: left;
+    margin-left: 0;
+}
+
+.task-list li {
+    margin-top: 1rem;
+}
+
+.task-list li::marker {
+    content: '';
+    color: blue;
 }
