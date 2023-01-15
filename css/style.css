@@ -265,6 +265,20 @@ main div.grid-4 {
     display: none;
 }
 
+.hollow-chart {
+    background: conic-gradient(var(--blue) 0% 40%, var(--pink) 40% 60%, var(--orange) 60% 80%, var(--red) 80% 100%);
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.hollow-inner {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
 .large-logo {
     width: 20rem;
 }
@@ -301,4 +315,8 @@ main div.grid-4 {
 
 .square-img img {
     width: 100%;
+}
+
+.task-list {
+    text-align: left;
 }
