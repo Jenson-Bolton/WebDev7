@@ -156,6 +156,29 @@ main div.grid-4 {
     flex-direction: column;
 }
 
+.form-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container div {
+    background-color: var(--background);
+    border: 1rem solid var(--white);
+    border-radius: 2rem;
+    width: 30rem;
+    height: 30rem;
+}
+
+.form-container input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -189,6 +212,10 @@ main div.grid-4 {
 
 .grid-gap-large {
     grid-gap: 2rem;
+}
+
+.hide {
+    display: none;
 }
 
 .large-logo {
