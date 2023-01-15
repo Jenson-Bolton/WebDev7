@@ -306,6 +306,12 @@ main div.grid-4 {
     background-color: var(--white);
 }
 
+.pad-aspect {
+    padding: 4rem;
+    width: calc(100% - 8rem);
+    height: calc(100% - 8rem);
+}
+
 .smaller {
     font-size: 0.75rem !important;
 }
@@ -332,11 +338,55 @@ main div.grid-4 {
     margin-left: 0;
 }
 
+.task-list h2 {
+    margin: 0;
+}
+
 .task-list li {
+    position: relative;
     margin-top: 1rem;
+}
+
+.task-list li::before {
+    content: '';
+    background-color: var(--blue);
+    position: absolute;
+    top: calc(50% - (0.75rem/2));
+    left: -1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.task-list li.orange::before {
+    background-color: var(--orange);
+}
+
+.task-list li.pink::before {
+    background-color: var(--pink);
+}
+
+.task-list li.red::before {
+    background-color: var(--red);
 }
 
 .task-list li::marker {
     content: '';
-    color: blue;
+}
+
+.task-pad {
+    height: 30px;
+}
+
+.user-card {
+    background-color: var(--background);
+}
+
+.users h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.users-scroll {
+    height: 100%;
+    overflow-y: scroll;
 }
