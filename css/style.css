@@ -277,6 +277,10 @@ main div.grid-4 {
     height: 12.5rem;
 }
 
+.hollow-chart#jenson {
+    background: conic-gradient(var(--blue) 0% 40%, var(--pink) 40% 60%, var(--orange) 60% 80%, var(--red) 80% 100%);
+}
+
 .hollow-inner {
     background-color: var(--white);
     border-radius: 50%;
